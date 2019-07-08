@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <body>
+
     <h1><%= @article.title %></h1>
     <p><%= @article.content %></p>
-    <br />
+    
+    <!--Allows user to delete articles on show page.-->
     <form method="POST" action="/articles/<%= @article.id %>/delete">
       <input id="hidden" type="hidden" name="_method" value="delete">
       <input type="submit" value="delete">
     </form>
-  </body>
+
 </html>
