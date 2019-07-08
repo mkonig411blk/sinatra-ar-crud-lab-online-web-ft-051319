@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <body>
     <h1>Articles</h1>
     <% @articles.each do |article| %>
-      <strong><%= article.title %></strong><br />
+      <%= article.title %>
       <%= article.content %>
-      <br /><br />
     <% end %>
-  </body>
 </html>
